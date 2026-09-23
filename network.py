@@ -8,7 +8,7 @@ class ActorCriticMethod(nn.Module):
         self.aux_lambda = aux_lambda
 
         # 1. Shared feature trunk
-        self.shared_trunk = nn.sequential(
+        self.shared_trunk = nn.Sequential(
             nn.Linear(state_dim, 64),
             nn.Tanh(),
             nn.Linear(64, 64),
