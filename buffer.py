@@ -3,7 +3,7 @@ import torch
 
 class RolloutBuffer: 
     def __init__(self, buffer_size, state_dim, action_dim, gamma=0.99, gae_lambda=0.95):
-        self.buffer = buffer_size
+        self.buffer_size = buffer_size
         self.state_dim = state_dim
         self.action_dim = action_dim
         self.gamma = gamma
