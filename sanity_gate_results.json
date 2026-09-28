@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "protocol_version": "v3",
+    "git_commit_sha": "b20739cc620587e12b2ca6645ffda5bb0129336d",
+    "environment": "InvertedPendulum-v4",
+    "packages": {
+      "python": "3.10.21",
+      "torch": "2.14.0+cu130",
+      "gymnasium": "1.3.0"
+    }
+  },
+  "sanity_gate_config": {
+    "train_steps": 25000,
+    "train_seed": 42,
+    "eval_episodes": 20,
+    "lambda_aux": 0.1,
+    "nominal_pole_mass": 5.018591641363306,
+    "shifted_pole_mass": 10.037183282726613
+  },
+  "results": {
+    "baseline": {
+      "nominal_return": 58.8,
+      "nominal_std": 0.9273618495495703,
+      "shifted_return": 53.1,
+      "shifted_std": 1.1789826122551597,
+      "prr_percent": 90.3061224489796,
+      "delta_r": 5.699999999999996,
+      "shifted_rms_theta": 0.07476102996884615,
+      "shifted_action_effort": 0.2925982177257538,
+      "shifted_forward_mse": 0.11634561921216574
+    },
+    "predictive": {
+      "nominal_return": 95.35,
+      "nominal_std": 0.9630680142129111,
+      "shifted_return": 83.3,
+      "shifted_std": 0.9000000000000001,
+      "prr_percent": 87.36234923964342,
+      "delta_r": 12.049999999999997,
+      "shifted_rms_theta": 0.05772484794989186,
+      "shifted_action_effort": 0.13663561642169952,
+      "shifted_forward_mse": 0.013932329710680464
+    }
+  }
+}

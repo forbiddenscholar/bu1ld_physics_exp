@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from torch.distributions.normal import Normal
 
-class ActorCriticMethod(nn.Module):
+class ActorCriticDynamics(nn.Module):
     def __init__(self, state_dim=4, action_dim=1, aux_lambda=0.1):
         super().__init__()
         self.aux_lambda = aux_lambda
